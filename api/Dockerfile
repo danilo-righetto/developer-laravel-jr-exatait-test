@@ -67,6 +67,7 @@ RUN rm -r webserver/*.conf && rm -r webserver/*.ini
 RUN php artisan key:generate
 
 EXPOSE 80
+EXPOSE 5173
 
 ENTRYPOINT ["/var/www/app/webserver/entrypoint.sh"]
 CMD ["supervisord", "-c", "/var/www/app/supervisord.conf"]

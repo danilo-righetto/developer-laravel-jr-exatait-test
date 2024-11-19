@@ -24,7 +24,7 @@ Esse é um teste técnico para a vaga de **Desenvolvedor Laravel Jr** para a emp
 
 ### Requisitos
 
-- [ ] Cadastro de Usuário: Permitir que novos usuários se cadastrem no sistema e façam login.
+- [x] Cadastro de Usuário: Permitir que novos usuários se cadastrem no sistema e façam login.
 - [ ] Usuários autenticados podem criar, editar, visualizar e excluir tarefas.
 - [ ] Cada tarefa deve ter um título, descrição e status (ex: "pendente", "em andamento", "concluída").
 - [ ] Filtros e Ordenação: Permitir que as tarefas sejam filtradas por status e ordenadas por data de criação ou atualização.
@@ -48,6 +48,21 @@ A partir de um ambiente de desenvolvimento composto pelo PHP na versão 8.2 ou s
 
 Este projeto utiliza o [Docker](https://www.docker.com/) e o [Docker Compose](https://docs.docker.com/compose/) para o desenvolvimento e deploy local.
 
+```bash
+  docker-compose up -d --build --no-cache
+```
+
+Após isso execute o comando abaixo para instalar as dependências do projeto:
+
+```bash
+  docker-compose exec app composer install
+```
+
+Para compilar os arquivos do Vue para o Frontend, execute o comando:
+
+```bash
+  docker-compose exec app npm run build
+```
 
 ## Documentação da API - Backend
 
