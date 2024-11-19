@@ -17,6 +17,8 @@ RUN apt-get -y update && \
     supervisor
 
 
+RUN apt-get install -y npm
+
 # Configurações do apache2
 RUN a2enmod ssl rewrite headers proxy* && rm /etc/apache2/sites-enabled/000*
 

@@ -21,11 +21,26 @@ services:
       - "6379:6379"
     networks:
       - localhost
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'exatait'
+      MYSQL_USER: 'exatait'
+      MYSQL_PASSWORD: 'exatait'
+      MYSQL_ROOT_PASSWORD: 'exatait'
+    ports:
+      - "3306:3306"
+    volumes:
+     - mysql_data:/var/lib/mysql
+    networks:
+      - localhost
 
 volumes:
   storage:
   laravel_cache:
   entrypoint:
+  mysql_data:
 
 networks:
   localhost:
