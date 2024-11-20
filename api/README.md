@@ -26,7 +26,7 @@ Esse é um teste técnico para a vaga de **Desenvolvedor Laravel Jr** para a emp
 
 - [x] Cadastro de Usuário: Permitir que novos usuários se cadastrem no sistema e façam login.
 - [ ] Usuários autenticados podem criar, editar, visualizar e excluir tarefas.
-- [ ] Cada tarefa deve ter um título, descrição e status (ex: "pendente", "em andamento", "concluída").
+- [x] Cada tarefa deve ter um título, descrição e status (ex: "pendente", "em andamento", "concluída").
 - [ ] Filtros e Ordenação: Permitir que as tarefas sejam filtradas por status e ordenadas por data de criação ou atualização.
 - [ ] Validações: Implementar validações básicas para garantir que os campos obrigatórios sejam preenchidos e que os dados estejam no formato adequado.
 - [ ] Adicionar uma distinção entre usuários comuns e um perfil "admin".
