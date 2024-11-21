@@ -5,6 +5,7 @@ import { Head } from '@inertiajs/vue3';
 defineProps<{
     mustVerifyEmail?: boolean;
     status?: string;
+    type?: string;
 }>();
 </script>
 
@@ -25,7 +26,7 @@ defineProps<{
                 <div
                     class="bg-white p-4 shadow sm:rounded-lg sm:p-8"
                 >
-                    Visualizar Perfil
+                    Visualizar Perfil - {{ type }}
                 </div>
             </div>
         </div>

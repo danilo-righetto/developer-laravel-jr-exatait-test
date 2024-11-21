@@ -15,7 +15,23 @@ class TaskController extends Controller
     public function show(Request $request): Response
     {
         return Inertia::render('Task/Show', [
-            'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
+            'type' => 'show',
+            'status' => session('status'),
+        ]);
+    }
+
+    public function edit(Request $request): Response
+    {
+        return Inertia::render('Task/Show', [
+            'type' => 'edit',
+            'status' => session('status'),
+        ]);
+    }
+
+    public function destroy(Request $request): Response
+    {
+        return Inertia::render('Task/Show', [
+            'type' => 'destroy',
             'status' => session('status'),
         ]);
     }

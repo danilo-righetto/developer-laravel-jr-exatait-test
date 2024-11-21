@@ -30,7 +30,7 @@ Esse é um teste técnico para a vaga de **Desenvolvedor Laravel Jr** para a emp
 - [ ] Filtros e Ordenação: Permitir que as tarefas sejam filtradas por status e ordenadas por data de criação ou atualização.
 - [ ] Validações: Implementar validações básicas para garantir que os campos obrigatórios sejam preenchidos e que os dados estejam no formato adequado.
 - [ ] Adicionar uma distinção entre usuários comuns e um perfil "admin".
-- [ ] Usuários comuns devem visualizar apenas as tarefas que eles mesmos criaram.
+- [x] Usuários comuns devem visualizar apenas as tarefas que eles mesmos criaram.
 - [ ] O usuário com perfil "admin" deve ter acesso a todas as tarefas criadas no sistema.
 
 ### Requisitos Técnicos:
