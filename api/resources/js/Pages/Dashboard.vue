@@ -2,11 +2,16 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, Link } from '@inertiajs/vue3';
 
+interface Tasks {
+    id: number;
+    title: string;
+}
+
 defineProps<{
     name?: string;
-    inProgress?: Array;
-    pending?: Array;
-    completed?: Array;
+    inProgress?: Array<Tasks>;
+    pending?: Array<Tasks>;
+    completed?: Array<Tasks>;
 }>();
 </script>
 

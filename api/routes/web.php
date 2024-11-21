@@ -25,6 +25,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/task/{id}', [TaskController::class, 'show'])->where('id', '[0-9]+')->name('task.show');
     Route::get('/task/edit/{id}', [TaskController::class, 'edit'])->where('id', '[0-9]+')->name('task.edit');
+    Route::patch('/task/edit/{id}', [TaskController::class, 'update'])->where('id', '[0-9]+')->name('task.update');
     Route::get('/task/delete/{id}', [TaskController::class, 'destroy'])->where('id', '[0-9]+')->name('task.destroy');
 });
 
